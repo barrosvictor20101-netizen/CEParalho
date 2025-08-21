@@ -1,0 +1,131 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #f0f4f9, #cce0ff);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #003366;
+}
+
+/* Cabeçalho com fundo azul escuro */
+header {
+    background-color: #e40d0d;
+    color: #ffdd00;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(194, 5, 5, 0.2);
+}
+
+.logo {
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-top: 6px;
+    color: #ffd633;
+}
+
+/* Conteúdo principal */
+main {
+    flex-grow: 1;
+    padding: 40px 20px;
+    max-width: 480px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Caixa do CEP */
+.cep-container {
+    background: white;
+    padding: 25px 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    display: block;
+    color: #003366;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    font-size: 1.2rem;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 2px solid #003366;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+button {
+    background-color: #f10a0a;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 22px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #003366;
+    box-shadow: 0 4px 8px rgba(247, 11, 3, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffd633;
+}
+
+/* Resultado */
+.resultado {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    padding: 25px 20px;
+    font-size: 1.1rem;
+    min-height: 120px;
+    color: #003366;
+}
+
+.resultado strong {
+    color: #00509e;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px 10px;
+    background-color: #003366;
+    color: #ffdd00;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.15);
+}
